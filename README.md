@@ -2,6 +2,8 @@
 
 Vue 3 + Vite 製作的繽紛積木網站，使用 **Cloudflare Pages** 與 GitHub 自動部署。
 
+公開網站：[洧杰的第一ㄍ網站](https://cloudflare-demo-3u4.pages.dev/)
+
 ## 本機開發
 
 使用 Node.js 24 LTS：
@@ -20,7 +22,7 @@ npm run dev
 
 - Production branch：`main`
 - Build command：`npm run build`
-- Framework preset：`Vue`（或選 None 並手動填入相同設定）
+- Framework preset：`None`（手動填入以下設定）
 - Build output directory：`dist`
 - Root directory：留空，使用儲存庫根目錄
 - Node.js：由 `.nvmrc` 指定 `24`
