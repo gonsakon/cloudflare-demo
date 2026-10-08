@@ -1,0 +1,42 @@
+:root {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans TC", sans-serif;
+  color: #242722;
+  background: #f4f1eb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* { box-sizing: border-box; }
+body { margin: 0; }
+a { color: inherit; text-decoration: none; }
+.page { width: min(1180px, 100%); min-height: 100svh; margin: auto; padding: 0 48px; display: flex; flex-direction: column; }
+header { padding: 30px 0; border-bottom: 1px solid #d9d7cf; display: flex; align-items: center; justify-content: space-between; gap: 20px; }
+.brand { display: flex; align-items: center; gap: 10px; font-size: 13px; font-weight: 750; letter-spacing: 1.6px; }
+.brand-icon { font-size: 30px; color: #d95529; line-height: 1; }
+.source { font-size: 13px; }
+.source span { margin-left: 10px; }
+main { flex: 1; padding: 76px 0 84px; }
+.eyebrow { display: flex; align-items: center; gap: 9px; color: #62675c; font-size: 11px; letter-spacing: 2px; font-weight: 600; }
+.eyebrow span { width: 7px; height: 7px; background: #5c7958; border-radius: 50%; }
+h1 { margin: 30px 0 26px; font-size: clamp(58px, 8.7vw, 112px); line-height: .98; letter-spacing: -.07em; font-weight: 700; }
+h1 span { color: #cf4d22; }
+.intro { margin: 0; color: #62675c; font-size: 19px; line-height: 1.9; }
+.interaction { margin-top: 34px; display: flex; align-items: center; gap: 22px; flex-wrap: wrap; }
+button { border: 0; border-radius: 7px; padding: 16px 24px; color: #fff; background: #242722; font: inherit; font-size: 15px; cursor: pointer; }
+button span { margin-left: 34px; }
+button:hover { background: #41463c; }
+a:focus-visible, button:focus-visible { outline: 3px solid #cf4d22; outline-offset: 5px; }
+.interaction p { color: #62675c; font-size: 13px; }
+footer { padding: 23px 0 28px; border-top: 1px solid #d9d7cf; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; color: #62675c; font-size: 12px; }
+footer p { margin: 0; font-size: 10px; letter-spacing: .6px; }
+footer strong { margin-left: 10px; font-weight: 500; }
+@media (max-width: 600px) {
+  .page { padding: 0 24px; }
+  header { padding: 24px 0; }
+  .brand { font-size: 10px; letter-spacing: .8px; gap: 6px; }
+  .source { font-size: 12px; }
+  main { padding: 65px 0 70px; }
+  h1 { margin-top: 28px; }
+  .intro { font-size: 17px; }
+  .interaction { gap: 8px 18px; }
+}
